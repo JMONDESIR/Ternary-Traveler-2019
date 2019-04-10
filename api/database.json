@@ -1,45 +1,45 @@
 {
-        "places": [
-                {
-                        "id": 1,
-                        "name": "San Jose",
-                        "visa_required": false
-                },
-                {
-                        "id": 2,
-                        "name": "Panama City",
-                        "visa_required": false
-                },
-                {
-                        "id": 3,
-                        "name": "San Salvador",
-                        "visa_required": true
-                }
-        ],
-        "interests": [
-                {
-                        "id": 1,
-                        "placeId": 1,
-                        "name": "Mount Hermon Adventures",
-                        "description": "High in the Redwood Canopy, this tourist destination ofers mountain biking, surfing, sea kayaking, target sports, aquatic facilities, paint ball, skate park and more.",
-                        "cost": 0.00,
-                        "review": ""
-                },
-                {
-                        "id": 2,
-                        "placeId": 2,
-                        "name": "Camp Helen State Park",
-                        "description": "185 acres of beach, and offers fishing, boating and fires in designated areas.",
-                        "cost": 0.00,
-                        "review": ""
-                },
-                {
-                        "id": 3,
-                        "placeId": 3,
-                        "name": "San Salvador Cathedral",
-                        "description": "The Metropolitan Cathedral of the Holy Savior is the principal church of the Roman Catholic Archdiocese of San Salvador and the seat of the Archbishop of San Salvador.",
-                        "cost": 0.00,
-                        "review": ""
-                }
-        ]
+  "places": [
+    {
+      "name": "San Jose",
+      "visa_required": false,
+      "id": 1
+    },
+    {
+      "name": "Panama City",
+      "visa_required": false,
+      "id": 2
+    },
+    {
+      "name": "San Salvador",
+      "visa_required": true,
+      "id": 3
+    }
+  ],
+  "interests": [
+    {
+      "id": 1,
+      "placeId": 1,
+      "name": "Mount Hermon Adventures",
+      "description": "High in the Redwood Canopy, this tourist destination ofers mountain biking, surfing, sea kayaking, target sports, aquatic facilities, paint ball, skate park and more.",
+      "cost": 49.99,
+      "review": ""
+    },
+    {
+      "id": 2,
+      "placeId": 2,
+      "name": "Camp Helen State Park",
+      "description": "185 acres of beach, and offers fishing, boating and fires in designated areas.",
+      "cost": 0,
+      "review": ""
+    },
+    {
+      "id": 3,
+      "placeId": 3,
+      "name": "San Salvador Cathedral",
+      "description": "The Metropolitan Cathedral of the Holy Savior is the principal church of the Roman Catholic Archdiocese of San Salvador and the seat of the Archbishop of San Salvador.",
+      "cost": 0,
+      "review": ""
+    }
+  ]
 }
