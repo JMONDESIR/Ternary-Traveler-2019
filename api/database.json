@@ -40,6 +40,14 @@
       "description": "The Metropolitan Cathedral of the Holy Savior is the principal church of the Roman Catholic Archdiocese of San Salvador and the seat of the Archbishop of San Salvador.",
       "cost": 0,
       "review": ""
+    },
+    {
+      "placeId": "",
+      "name": "Moo Moo meadows",
+      "description": "A great place if it weren't for all the cows.",
+      "cost": "5.99",
+      "review": "",
+      "id": 4
     }
   ]
 }
