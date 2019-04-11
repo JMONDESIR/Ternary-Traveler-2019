@@ -17,7 +17,7 @@ const EventHandler = {
                 const cost = document.querySelector("#costInput")
 
                 const interestObject = {
-                        placeId: "",
+                        placeId: null,
                         name: name.value,
                         description: description.value,
                         cost: cost.value,
@@ -25,6 +25,13 @@ const EventHandler = {
                 }
                 console.log(interestObject)
                 Data.postInterest(interestObject).then(clearElement(cardContainer))
+                        .then(DOMBuilder.buildBody)
+        },
+        deleteInterest() {
+                const cardContainer = document.getElementById("cardContainer")
+                const cardId = event.target.parentNode.id.split("--")[1]
+                console.log(cardId)
+                Data.deleteInterest(cardId).then(clearElement(cardContainer))
                 .then(DOMBuilder.buildBody)
         }
 }

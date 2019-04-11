@@ -21,6 +21,11 @@ const Data = {
                 }
                 ).then(response => response.json())
         },
+        deleteInterest(cardId) {
+                return fetch(`http://localhost:8088/interests/${cardId}`, {
+                        method: "DELETE",
+                })
+        },
 }
 
 export default Data
