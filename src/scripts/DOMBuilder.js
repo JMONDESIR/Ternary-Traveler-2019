@@ -64,9 +64,12 @@ const DOMBuilder = {
 
                 Data.getAllInterests()
                         .then(interests => interests.forEach(interest => {
+                                // let cardId = event.target.parentNode.id.split("--")[1]
+                                const cardId = interest.id
+                                console.log(cardId)
                                 const interestCard = document.createElement("div")
                                 interestCard.className = "interestCard"
-                                interestCard.id = `interestCard--${interest.placeId}`
+                                interestCard.id = `interestCard--${interest.id}`
                                 cardContainer.appendChild(interestCard)
 
                                 const interestName = document.createElement("h3")
@@ -92,13 +95,13 @@ const DOMBuilder = {
                                 const deleteButton = document.createElement("button")
                                 deleteButton.textContent = "DELETE"
                                 interestCard.appendChild(deleteButton)
+                                deleteButton.addEventListener("click", EventHandler.deleteInterest)
 
                                 const rule = document.createElement("hr")
                                 interestCard.appendChild(rule)
 
                                 Data.getAllPlaces()
                                 .then(places => places.forEach(place => {
-                                        console.log(place.name)
                                         const placeName = document.createElement("option")
                                         placeName.textContent = place.name
                                 }))
